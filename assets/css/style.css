@@ -1,0 +1,34 @@
+body {
+    font-family: 'Newsreader', serif;
+}
+.nav-wrapper {
+    background-image: linear-gradient(90deg, #ff6f00, #B93DFE);
+}
+.nav-wrapper > a {
+    white-space: nowrap;
+    display: inline-block;
+}
+.searchDiv {
+    margin-top: 1em;
+}
+.resultsDiv {
+    margin-top: 1em;
+}
+.collection-header > h5 {
+    white-space: nowrap;
+    display: inline-block;
+}
+.collection.with-header .collection-item {
+    padding-left: 20px;
+}
+nav .brand-logo {
+    color: #424242;
+}
+.input-field 
+.helper-text {
+    color: rgba(66, 66, 66, 0.9);
+}
+.card
+.card-content {
+    padding: 12px;
+}

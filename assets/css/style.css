@@ -1,5 +1,19 @@
+/* Personalized Styling */
 body {
     font-family: 'Newsreader', serif;
+}
+.uvText {
+    padding: 0.5em;
+    border-radius: 10px;
+}
+.low {
+    background: #32cd32;
+}
+.moderate {
+    background: #EBEB00;
+}
+.high {
+    background: #ff6347;
 }
 .nav-wrapper {
     background-image: linear-gradient(90deg, #ff6f00, #B93DFE);
@@ -7,19 +21,13 @@ body {
 .nav-wrapper > a {
     white-space: nowrap;
     display: inline-block;
-}
-.searchDiv {
-    margin-top: 1em;
+    text-shadow: 1px 1px 6px #4758EE;
 }
 .resultsDiv {
     margin-top: 1em;
-}
-.collection-header > h5 {
-    white-space: nowrap;
-    display: inline-block;
-}
-.collection.with-header .collection-item {
-    padding-left: 20px;
+    margin-left: 10%;
+    border: 2px solid #ff6f00;
+    border-radius: 10px;
 }
 nav .brand-logo {
     color: #424242;
@@ -28,7 +36,75 @@ nav .brand-logo {
 .helper-text {
     color: rgba(66, 66, 66, 0.9);
 }
+.input-field .prefix.active {
+    color: #FD7CCF;
+}
+#currentWeatherDiv {
+    padding: 0.5em;
+}
+
+
+/* Materialize Tweaking */
+.searchDiv {
+    margin-top: 1em;
+}
+.collection > h5 {
+    white-space: nowrap;
+    display: inline-block;
+}
+.collection .collection-item {
+    padding-left: 20px;
+}
 .card
 .card-content {
-    padding: 12px;
+    padding: 8px;
+}
+.col 
+.row {
+    margin-left: 0;
+}
+.nowrap {
+    white-space: nowrap;
+    display: inline-block;
+}
+.card.small {
+    height: 250px;
+}
+.card .card-title {
+    font-size: 30px;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #FD7CCF;
+    box-shadow: 0 1px 0 #FD7CCF;
+}
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: #FD7CCF;
+}
+input.valid[type=text]:not(.browser-default) {
+    border-bottom:1px solid #D287FB;
+    box-shadow: 0 1px 0 0 #D287FA;
+}
+@media only screen and (min-width: 993px) {
+    .row .col.l2 {
+        width: 20%;
+    }   
+    .card.medium {
+        height: fit-content;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .resultsDiv {
+        margin-left: 5%;
+    }
+    .card.medium {
+        height: fit-content;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .resultsDiv {
+        margin-left: auto;
+    }
+    .card.medium {
+        height: fit-content;
+    }
 }
